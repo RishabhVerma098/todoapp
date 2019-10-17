@@ -1,18 +1,31 @@
 import React, { Component } from "react";
 import "./App.css";
 
-//NOTE:DO NOT NAME CLASS AS CONATINER...
-
 class App extends Component {
   state = {
     slide: false
   };
 
-  style = slide => {
-    var x = slide ? "-200px" : "0px";
+  style = () => {
+    var x = this.state.slide ? "-200px" : "0px";
     return {
       transform: "translateX(" + x + ")",
-      transition: "transform 0.5s ease-out"
+      transition: "all 0.5s ease-out"
+    };
+  };
+  rotateIcon = () => {
+    if (this.state.slide) {
+      return "fa-rotate-270";
+    } else {
+      return "fa-rotate-90";
+    }
+  };
+  changeColorOfIcon = () => {
+    var x = this.state.slide ? "red" : "orange";
+    return {
+      color: x,
+      transition: "all 0.5s ease-out",
+      fontSize: "40px"
     };
   };
 
@@ -20,13 +33,14 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col-2 sideMenu" style={this.style(this.state.slide)}>
-            <button
-              onClick={() => this.setState({ slide: !this.state.slide })}
-              style={{ marginLeft: "200px" }}
-            >
-              ok
-            </button>
+          <div className="col-2 sideMenu" style={this.style()}>
+            <div className="icon">
+              <i
+                class={"fas fa-chevron-circle-down " + this.rotateIcon()}
+                style={this.changeColorOfIcon()}
+                onClick={() => this.setState({ slide: !this.state.slide })}
+              ></i>
+            </div>
           </div>
           <div className="col-10 main"></div>
         </div>

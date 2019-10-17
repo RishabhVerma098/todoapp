@@ -18,3 +18,8 @@
 .sideMenu {
   background-color: #272f37;
 }
+.sideMenu .icon i {
+  float: right;
+  margin-right: -35px;
+  margin-top: 20px;
+}
