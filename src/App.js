@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+import "./App.scss";
 
 class App extends Component {
   state = {
@@ -34,12 +34,21 @@ class App extends Component {
       <div className="container-fluid">
         <div className="row">
           <div className="col-2 sideMenu" style={this.style()}>
-            <div className="icon">
-              <i
-                class={"fas fa-chevron-circle-down " + this.rotateIcon()}
-                style={this.changeColorOfIcon()}
-                onClick={() => this.setState({ slide: !this.state.slide })}
-              ></i>
+            <div
+              className="row justify-content-end"
+              style={{
+                height: "30px",
+                width: "100%",
+                marginTop: "20px"
+              }}
+            >
+              <div className="icon">
+                <i
+                  class={"fas fa-chevron-circle-down " + this.rotateIcon()}
+                  style={this.changeColorOfIcon()}
+                  onClick={() => this.setState({ slide: !this.state.slide })}
+                ></i>
+              </div>
             </div>
           </div>
           <div className="col-10 main"></div>
