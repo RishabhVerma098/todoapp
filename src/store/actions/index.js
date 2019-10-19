@@ -1,10 +1,5 @@
-export const sliderIn = () => {
+export const sliderInOut = () => {
   return {
-    type: "SIDE-IN"
-  };
-};
-export const sliderOut = () => {
-  return {
-    type: "SIDE-OUT"
+    type: "SIDE-IN-OUT"
   };
 };
