@@ -16,7 +16,8 @@ class ButtonGrey extends Component {
           color: this.state.color,
           fontWeight: "bold",
           borderRadius: "2px",
-          letterSpacing: "1.5px"
+          letterSpacing: "1.5px",
+          cursor: "pointer"
         }}
         onMouseEnter={() =>
           this.setState({ backgroundColor: "#da5655", color: "#CCD1D4" })
