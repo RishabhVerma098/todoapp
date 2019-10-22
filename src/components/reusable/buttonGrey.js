@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { panelList } from "../../store/actions/index";
 class ButtonGrey extends Component {
   state = {
     backgroundColor: this.props.backgroundColor,
@@ -28,6 +28,7 @@ class ButtonGrey extends Component {
             color: this.props.color
           })
         }
+        onClick={this.props.dispatch}
       >
         {this.props.font}
       </div>
