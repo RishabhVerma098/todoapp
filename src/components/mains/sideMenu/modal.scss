@@ -1,0 +1,15 @@
+$myWhiteColor: #ededed;
+
+.my-modal {
+  .modal-content {
+    background-color: #272f37;
+  }
+  .header {
+    .title {
+      color: $myWhiteColor;
+    }
+    span {
+      color: $myWhiteColor;
+    }
+  }
+}

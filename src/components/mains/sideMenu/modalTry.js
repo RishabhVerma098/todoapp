@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Modal from "react-bootstrap/Modal";
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Button, Row, Col, Container } from "react-bootstrap";
 import { connect } from "react-redux";
 import * as panelListAction from "../../../store/actions/index";
 import { bindActionCreators } from "redux";
 import GreyButton from "../../reusable/buttonGrey";
+import "./modal.scss";
 class ModalTry extends Component {
   constructor(props) {
     super(props);
@@ -50,9 +51,13 @@ class ModalTry extends Component {
             onHide={() => this.setState({ show: false })}
             dialogClassName="modal-90w"
             aria-labelledby="example-custom-modal-styling-title"
+            className="my-modal"
           >
-            <Modal.Header closeButton>
-              <Modal.Title id="example-custom-modal-styling-title">
+            <Modal.Header closeButton className="header">
+              <Modal.Title
+                id="example-custom-modal-styling-title"
+                className="title"
+              >
                 Add New List
               </Modal.Title>
             </Modal.Header>
@@ -61,8 +66,9 @@ class ModalTry extends Component {
                 <Col xs={10}>
                   <Form.Control
                     type="text"
-                    placeholder="Normal text"
+                    placeholder="list name"
                     onChange={this.handleSubmit}
+                    style={{ backgroundColor: "#ededed" }}
                   />
                 </Col>
                 <Col xs={2}>
