@@ -1,11 +1,10 @@
 import React from "react";
-import ButtonGrey from "../../reusable/buttonGrey";
-import { useSelector, useDispatch } from "react-redux";
-import { panelList } from "../../../store/actions/index";
+import { useSelector } from "react-redux";
+
+import ModalTry from "./modalTry";
 
 function PanelList() {
   const statelist = useSelector(state => state.panelList);
-  const dispatch = useDispatch();
   const list = statelist;
   return (
     <div className="panelList">
@@ -15,12 +14,7 @@ function PanelList() {
         ))}
       </ul>
       <span className="greyButton">
-        <ButtonGrey
-          backgroundColor="#4a515c"
-          color="#8a8e91"
-          font="NEW LIST +"
-          dispatch={() => dispatch(panelList("heelo"))}
-        />
+        <ModalTry />
       </span>
     </div>
   );

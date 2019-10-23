@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { panelList } from "../../store/actions/index";
+
 class ButtonGrey extends Component {
   state = {
     backgroundColor: this.props.backgroundColor,
