@@ -1,0 +1,44 @@
+@import "../../../_variable";
+.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  .item {
+    position: relative;
+    top: 40%;
+    left: 35%;
+    .cardComponent-false {
+      width: 270px;
+      height: 55px;
+      background-color: $myCardColor;
+      border-radius: 5px;
+      padding-left: 20px;
+      padding-top: 15px;
+      color: $myCardFontColor;
+      -webkit-box-shadow: 9px 9px 23px -3px rgba(0, 0, 0, 0.42);
+      -moz-box-shadow: 9px 9px 23px -3px rgba(0, 0, 0, 0.42);
+      box-shadow: 9px 9px 23px -3px rgba(0, 0, 0, 0.42);
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .cardComponent-true {
+      transition: all 0.3s ease-in;
+      width: 270px;
+      height: 95px;
+      background-color: white;
+      border-radius: 5px;
+      padding-left: 20px;
+      padding-top: 15px;
+      color: black;
+      -webkit-box-shadow: 9px 9px 23px -3px rgba(0, 0, 0, 0.42);
+      -moz-box-shadow: 9px 9px 23px -3px rgba(0, 0, 0, 0.42);
+      box-shadow: 9px 9px 23px -3px rgba(0, 0, 0, 0.42);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

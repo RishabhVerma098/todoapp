@@ -51,7 +51,6 @@ function Sidemenu() {
           <BottomUserLogOut />
         </div>
       </div>
-      <div className="col-10 main"></div>
     </React.Fragment>
   );
 }
