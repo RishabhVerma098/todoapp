@@ -1,10 +1,11 @@
 import React from "react";
-import ResuableRoundedButton from "../../reusable/roundedResuableButton";
+import ResuableRoundedButton from "../../../reusable/roundedResuableButton";
 import { useSelector, useDispatch } from "react-redux";
-import { sliderInOut } from "../../../store/actions/index";
-import PanelList from "./panelList";
-import PanelSettings from "./panelSettings";
-import BottomUserLogOut from "./bottomUser&LogOut";
+import { sliderInOut } from "../../../../store/actions/index";
+import PanelList from "../panelList/panelList";
+import PanelSettings from "../panelSettings/panelSettings";
+import BottomUserLogOut from "../bottomUserLogin/bottomUser&LogOut";
+import "./sidemenu.scss";
 const style = slide => {
   var x = slide ? "-200px" : "0px";
   return {

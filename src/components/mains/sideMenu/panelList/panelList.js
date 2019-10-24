@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-
-import ModalTry from "./modalTry";
+import "./panelList.scss";
+import ModalTry from "../../sideMenu/modal/modalTry";
 
 function PanelList() {
   const statelist = useSelector(state => state.panelList);

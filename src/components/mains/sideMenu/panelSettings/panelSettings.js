@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./panelSettings.scss";
 function PanelSettings() {
   return (
     <div className="panelSettings">

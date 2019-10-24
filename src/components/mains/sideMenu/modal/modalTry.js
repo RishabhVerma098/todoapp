@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Modal from "react-bootstrap/Modal";
-import { Form, Button, Row, Col, Container } from "react-bootstrap";
+import { Form, Button, Row, Col } from "react-bootstrap";
 import { connect } from "react-redux";
-import * as panelListAction from "../../../store/actions/index";
+import * as panelListAction from "../../../../store/actions/index";
 import { bindActionCreators } from "redux";
-import GreyButton from "../../reusable/buttonGrey";
+import GreyButton from "../../../reusable/buttonGrey";
 import "./modal.scss";
 class ModalTry extends Component {
   constructor(props) {

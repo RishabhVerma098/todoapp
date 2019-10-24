@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.scss";
-import SideMenu from "./components/mains/sideMenu/sidemenu";
+import SideMenu from "./components/mains/sideMenu/index/sidemenu";
 
 class App extends Component {
   render() {

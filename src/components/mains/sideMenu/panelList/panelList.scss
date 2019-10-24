@@ -1,0 +1,26 @@
+@import "../../../../_variable";
+.panelList {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: $myGreyColor;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .list {
+    list-style-type: none;
+    text-align: center;
+    li {
+      margin-top: 7px;
+      &:hover {
+        color: $myRedColor;
+        cursor: pointer;
+        transition: all 0.4s ease-out;
+      }
+    }
+  }
+  .greyButton {
+    display: flex;
+    justify-content: center;
+  }
+}
